@@ -25,9 +25,9 @@ $button.addEventListener('click', () => {
 
 $clip.addEventListener('click', () => {
   navigator.clipboard.writeText($pass.textContent)
-  $clip.children[0].src = '../assets/check.svg'
+  $clip.children[0].src = '../pass-generator-js/assets/check.svg'
 
   setTimeout(() => {
-    $clip.children[0].src = '../assets/clip.svg'
+    $clip.children[0].src = '../pass-generator-js/assets/clip.svg'
   }, 2000)
 })

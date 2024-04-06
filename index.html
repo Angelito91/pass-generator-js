@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generetor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <h3>Crea contraseñas seguras y confiables</h3>
+
+      <div class="container">
+        <div class="box">
+          <span class="pass">PASSWORD</span>
+          <button class="clip" aria-label="asd">
+            <img src="assets/clip.svg" alt="clipboard" />
+          </button>
+        </div>
+
+        <div class="radio-group">
+          <label for="radio-normal">
+            <input
+              type="radio"
+              name="len"
+              value="8"
+              id="radio-normal"
+              checked
+            />
+            normal
+          </label>
+          <label for="radio-seguro">
+            <input type="radio" name="len" value="16" id="radio-seguro" />
+            seguro
+          </label>
+          <label for="radio-super">
+            <input type="radio" name="len" value="20" id="radio-super" />
+            super seguro
+          </label>
+        </div>
+        <button id="button">Crear</button>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
